@@ -1,3 +1,5 @@
+require './setting'
+
 Lita.configure do |config|
   # The name your robot will use.
   config.robot.name = "lita"
@@ -25,13 +27,10 @@ Lita.configure do |config|
   # config.adapter.password = "secret"
 
   ## Example: Set options for the Redis connection.
-  config.redis = {
-    :host => "127.0.0.1",
-    :port => 6379
-  }
+  config.redis = Setting.redis
 
-  config.http.host = "127.0.0.1"
-  config.http.port = 1234
+  config.http.host = Setting.http.host
+  config.http.port = Setting.http.port
   ## Example: Set configuration for any loaded handlers. See the handler's
   ## documentation for options.
   # config.handlers.some_handler.some_config_key = "value"
