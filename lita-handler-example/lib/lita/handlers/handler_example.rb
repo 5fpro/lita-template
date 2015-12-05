@@ -12,6 +12,12 @@ module Lita
         response.reply(response.user.name)
       end
 
+      http.get "/echo", :echo_http
+      def echo_http(request, response)
+        # response.headers["Content-Type"] = "application/json"
+        response.body << request.params["body"]
+      end
+
       Lita.register_handler(self)
     end
   end

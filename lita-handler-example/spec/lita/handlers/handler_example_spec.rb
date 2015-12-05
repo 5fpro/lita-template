@@ -6,4 +6,9 @@ describe Lita::Handlers::HandlerExample, lita_handler: true do
     expect(replies.size).to be > 0
     expect(replies.first).to match("123123")
   end
+
+  it "#echo_http" do
+    response = http.get("/echo", body: "123")
+    expect( response.body ).to match("123")
+  end
 end
