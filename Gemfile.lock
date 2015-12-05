@@ -1,3 +1,9 @@
+PATH
+  remote: ./lita-handler-example
+  specs:
+    lita-handler-example (0.1.0)
+      lita (>= 4.6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -38,4 +44,5 @@ PLATFORMS
 
 DEPENDENCIES
   lita
+  lita-handler-example!
   settingslogic
