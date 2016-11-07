@@ -8,3 +8,9 @@ http:
 slack:
   adapter:
     token: ""
+
+adapter:
+  flowdock:
+    token: ''
+    organization: ''
+    flows: ['']

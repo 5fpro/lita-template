@@ -2,4 +2,7 @@ source 'https://rubygems.org'
 
 gem 'lita'
 gem 'settingslogic'
-gem 'lita-slack'
+
+# adapters
+# gem 'lita-slack'
+gem 'lita-flowdock'
