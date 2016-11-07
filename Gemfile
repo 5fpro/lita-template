@@ -1,4 +1,4 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "lita"
-gem "settingslogic"
+gem 'lita'
+gem 'settingslogic'
