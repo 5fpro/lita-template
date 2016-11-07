@@ -14,7 +14,7 @@ Lita.configure do |config|
   config.robot.adapter = :shell
 
   # config.robot.adapter = :slack
-  # config.adapters.slack.token = Setting.slack.adapter.token
+  # config.adapters.slack.token = Setting.adapter.slack.token
 
   # config.robot.adapter = :flowdock
   # config.adapters.flowdock.api_token = Setting.adapter.flowdock.token

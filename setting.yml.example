@@ -10,6 +10,8 @@ slack:
     token: ""
 
 adapter:
+  slack:
+    token: ""
   flowdock:
     token: ''
     organization: ''
