@@ -6,7 +6,7 @@ Lita.configure do |config|
   config.robot.alias = '@'
   config.robot.log_level = :info
   config.robot.adapter = :shell
-  config.redis = Setting.redis
+  config.redis = Setting.redis.symbolize_keys
   config.http.host = Setting.http.host
   config.http.port = Setting.http.port
 end
