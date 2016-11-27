@@ -47,10 +47,7 @@ namespace :deploy do
     on roles(:app) do
       log = release_path.join("log/#{fetch(:stage)}.log")
       pid = release_path.join("tmp/pids/lita.pid")
-      if File.exists?(pid)
-        execute "kill -9 `cat #{pid}`"
-        execute "rm #{pid}"
-      end
+      execute "if [[ -f #{pid} ]]; then kill -9 `cat #{pid}` && rm #{pid}; fi;"
       execute "cd #{current_path} && (#{fetch(:rbenv_prefix)} bundle exec lita >> #{log} 2>&1 & echo $! > #{pid})"
     end
   end
