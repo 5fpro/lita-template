@@ -5,7 +5,8 @@ gem 'settingslogic'
 
 # adapters
 # gem 'lita-slack'
-gem 'lita-flowdock'
+# gem 'lita-flowdock'
+
 gem 'lita-ping'
 gem 'capistrano'
 gem 'capistrano-rbenv'
