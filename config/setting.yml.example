@@ -5,10 +5,6 @@ http:
   host: 127.0.0.1
   port: 8888
 
-slack:
-  adapter:
-    token: ""
-
 adapter:
   slack:
     token: ""
@@ -16,3 +12,7 @@ adapter:
     token: ''
     organization: ''
     flows: ['']
+
+handlers:
+  aws_cloudwatch:
+    default_room: '#cloudwatch'

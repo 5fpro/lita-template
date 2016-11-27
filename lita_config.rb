@@ -20,4 +20,7 @@ Lita.configure do |config|
   # config.adapters.flowdock.api_token = Setting.adapter.flowdock.token
   # config.adapters.flowdock.organization = Setting.adapter.flowdock.organization
   # config.adapters.flowdock.flows = Setting.adapter.flowdock.flows
+
+  # plugins
+  config.handlers.aws_cloudwatch.default_room = Setting.handlers.aws_cloudwatch.default_room
 end
