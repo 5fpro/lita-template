@@ -2,3 +2,4 @@
 /config/setting.yml
 /config/deploy/*.rb
 /log/*
+/.byebug*
