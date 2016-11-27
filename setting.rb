@@ -1,5 +1,5 @@
 require 'settingslogic'
 
 class Setting < Settingslogic
-  source 'setting.yml'
+  source 'config/setting.yml'
 end
