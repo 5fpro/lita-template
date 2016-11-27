@@ -5,7 +5,7 @@ gem 'settingslogic'
 
 # adapters
 # gem 'lita-slack'
-# gem 'lita-flowdock'
+gem 'lita-flowdock'
 
 # plugins
 gem 'lita-ping'

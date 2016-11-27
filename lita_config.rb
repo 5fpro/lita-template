@@ -11,15 +11,15 @@ Lita.configure do |config|
 
   # adapters
 
-  config.robot.adapter = :shell
+  # config.robot.adapter = :shell
 
   # config.robot.adapter = :slack
   # config.adapters.slack.token = Setting.adapter.slack.token
 
-  # config.robot.adapter = :flowdock
-  # config.adapters.flowdock.api_token = Setting.adapter.flowdock.token
-  # config.adapters.flowdock.organization = Setting.adapter.flowdock.organization
-  # config.adapters.flowdock.flows = Setting.adapter.flowdock.flows
+  config.robot.adapter = :flowdock
+  config.adapters.flowdock.api_token = Setting.adapter.flowdock.token
+  config.adapters.flowdock.organization = Setting.adapter.flowdock.organization
+  config.adapters.flowdock.flows = Setting.adapter.flowdock.flows
 
   # plugins
   config.handlers.aws_cloudwatch.default_room = Setting.handlers.aws_cloudwatch.default_room
