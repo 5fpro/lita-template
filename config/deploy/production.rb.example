@@ -1,0 +1,10 @@
+set :stage, :production
+set :deploy_to, '/home/apps/lita'
+server 'lita.5fpro.com',
+  user: 'apps',
+  roles: [:app],
+  ssh_options: {
+    forward_agent: true
+  }
+
+set :rbenv_ruby, File.read('.ruby-version').strip

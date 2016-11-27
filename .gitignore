@@ -1,2 +1,4 @@
 /lita-*/
 /config/setting.yml
+/config/deploy/*.rb
+/log/*
