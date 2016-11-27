@@ -51,7 +51,7 @@ namespace :deploy do
         execute "kill -9 `cat #{pid}`"
         execute "rm #{pid}"
       end
-      execute "cd #{current_path} && #{fetch(:rbenv_prefix)} bundle exec lita > #{log} 2>&1 & echo $! > #{pid}"
+      execute "cd #{current_path} && #{fetch(:rbenv_prefix)} bundle exec lita >> #{log} 2>&1 & echo $! > #{pid}"
     end
   end
 end
