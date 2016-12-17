@@ -47,7 +47,7 @@ namespace :deploy do
     on roles(:app) do
       log = release_path.join("log/#{fetch(:stage)}.log")
       pid = release_path.join("tmp/pids/lita.pid")
-      execute "if [[ -f #{pid} ]]; then kill -9 `cat #{pid}` && rm #{pid}; fi;"
+      test "if [[ -f #{pid} && -n `cat #{pid}` ]]; then kill -9 `cat #{pid}`; fi;"
       execute "cd #{release_path} && (#{fetch(:rbenv_prefix)} bundle exec lita >> #{log} 2>&1 & echo $! > #{pid})"
     end
   end
