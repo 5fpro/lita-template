@@ -2,7 +2,7 @@ require './setting'
 
 Lita.configure do |config|
   # https://docs.lita.io/getting-started/configuration/
-  config.robot.name = 'lita'
+  config.robot.name = 'eva'
   config.robot.alias = '@'
   config.robot.log_level = :debug
   config.redis = Setting.redis.symbolize_keys
@@ -11,10 +11,10 @@ Lita.configure do |config|
 
   # adapters
 
-  config.robot.adapter = :shell
+  # config.robot.adapter = :shell
 
-  # config.robot.adapter = :slack
-  # config.adapters.slack.token = Setting.adapter.slack.token
+  config.robot.adapter = :slack
+  config.adapters.slack.token = Setting.adapter.slack.token
 
   # config.robot.adapter = :flowdock
   # config.adapters.flowdock.api_token = Setting.adapter.flowdock.token
