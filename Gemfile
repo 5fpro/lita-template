@@ -10,6 +10,7 @@ gem 'lita-slack'
 # plugins
 gem 'lita-ping'
 gem 'lita-aws-cloudwatch'
+gem 'lita-aws'
 
 # deployment
 gem 'capistrano'
