@@ -1,6 +1,6 @@
 GIT
   remote: git@github.com:marsz/lita-aws.git
-  revision: 9f2c708c5283b4442b091fd74194586110bdcab7
+  revision: 0e62e8ea7e0fe5fe051f76bdc744c2e3c07e3407
   specs:
     lita-aws (0.1.2)
       lita (>= 4.7)
