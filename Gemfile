@@ -10,6 +10,7 @@ gem 'lita-flowdock'
 # plugins
 gem 'lita-ping'
 gem 'lita-aws-cloudwatch'
+gem 'lita-aws', git: 'git@github.com:5fpro/lita-aws.git'
 
 # deployment
 gem 'capistrano'
