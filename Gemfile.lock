@@ -1,3 +1,10 @@
+GIT
+  remote: git@github.com:marsz/lita-aws.git
+  revision: d0b0aa69cea5615ee5685e7a66b52db1491d49ed
+  specs:
+    lita-aws (0.1.1)
+      lita (>= 4.7)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -19,6 +26,9 @@ GEM
       sshkit (~> 1.3)
     faraday (0.11.0)
       multipart-post (>= 1.2, < 3)
+    faye-websocket (0.10.4)
+      eventmachine (>= 0.12.0)
+      websocket-driver (>= 0.5.1)
     http_router (0.11.2)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
@@ -40,6 +50,12 @@ GEM
       lita (>= 4)
     lita-ping (1.1.2)
       lita (>= 2.0)
+    lita-slack (1.8.0)
+      eventmachine
+      faraday
+      faye-websocket (>= 0.8.0)
+      lita (>= 4.7.1)
+      multi_json
     multi_json (1.12.1)
     multipart-post (2.0.0)
     net-scp (1.2.1)
@@ -59,6 +75,9 @@ GEM
     thor (0.19.4)
     url_mount (0.2.1)
       rack
+    websocket-driver (0.6.5)
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.2)
 
 PLATFORMS
   ruby
@@ -69,8 +88,10 @@ DEPENDENCIES
   capistrano-bundler
   capistrano-rbenv
   lita
+  lita-aws!
   lita-aws-cloudwatch
   lita-ping
+  lita-slack
   settingslogic
 
 BUNDLED WITH
